@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chúc mừng sinh nhật</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="envelope new">
+      <div class="front">
+        <div class="mail">
+          <p>Happy Birthday</p>
+          <p>Bấm đi</p>
+        </div>
+      </div>
+      <div class="back">
+        <div class="letter">
+          <p>Chúc mừng sinh nhật :)))</p>
+          <p>Lợi vipprono1</p>
+          <p>HBD Bảo Duy</p>
+
+          <div class="box">
+            <div class="cake">
+              <div class="candle">
+                <div class="fire"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flip left-flip"></div>
+        <div class="flip right-flip"></div>
+        <div class="flip bottom-flip"></div>
+        <div class="flip top-flip"></div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(function () {
+        if (!$(".envelope").hasClass("open")) {
+          $(".envelope").click(function () {
+            $(this).removeClass("new").addClass("open");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
